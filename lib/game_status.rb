@@ -36,4 +36,4 @@ def won?(board)
 end
 
 board = ["X", "X", "X", "O", "O", " ", " ", " ", " "]
-won?(board)
+puts won?(board)
