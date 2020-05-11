@@ -16,6 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+  output = nil
   WIN_COMBINATIONS.each do |win_combo|
     index1 = win_combo[0]
     index2 = win_combo[1]
@@ -28,10 +29,10 @@ def won?(board)
     array = [position1, position2, position3]
 
     if array == ["X", "X", "X"] || array == ["O", "O", "O"]
-      return win_combo
+      output = win_combo
     else
-      return false
+      output = false
     end
-    nil
   end
+  return output
 end
