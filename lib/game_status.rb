@@ -34,5 +34,8 @@ def won?(board)
   false
 end
 
-board = ["", "", "", "", "X", "X", "", "X", "X"]
-puts won?(board)
+def full?(board)
+  all_full = board.all? do |position|
+    position == ""
+  end
+end
