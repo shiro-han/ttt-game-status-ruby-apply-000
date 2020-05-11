@@ -36,7 +36,7 @@ end
 
 def full?(board)
   all_full = board.none? do |position|
-    position == ""
+    position == ""||position = " "
   end
   all_full
 end
