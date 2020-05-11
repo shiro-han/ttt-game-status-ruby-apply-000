@@ -29,10 +29,9 @@ def won?(board)
 
     if array == ["X", "X", "X"] || array == ["O", "O", "O"]
       return win_combo
-    else
-      false
     end
   end
+  false
 end
 
 board = ["", "", "", "", "X", "X", "", "X", "X"]
